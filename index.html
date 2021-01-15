@@ -1,17 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Protfolio | Shubham </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="./img/title.png" />
+
+  <title>Shubham | Developer</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container1 {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-left: 40px;
+      margin-top: 40px;
+    }
+    </style>
+    
+
 </head>
-<body>
-     <!-- Video Source -->
-  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <!-- <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a> -->
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Welcome</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About Me</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#skills">Skills</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#projects">Projects</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <!-- <header class="masthead d-flex">
+    <div class="container text-right my-auto" style="height: 280px;">
+      <h3 style="color: white;">
+        <em>Hey there, I'm</em>
+      </h3>
+      <h1 class="mb-1" style="color: white;">Shubham Sinha</h1>
+      <h3 style="color: white;">
+        <em>& I work as a </em>
+      </h3>
+      <h1 class="mb-1" style="color: white;">Developer</h1>
+      <br/>
+      <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about">Know More!!</a>
+    </div>
+    <div class="overlay"></div>
+  </header> -->
+
+
   <section class="showcase">
     <header>
-      <h2 class="logo"></h2>
+      <h1 class="logo"></h1>
       <div class="toggle"></div>
     </header>
     <video src="Me.mp4" muted loop autoplay ></video>
@@ -21,7 +119,6 @@
       <h3>I am Shubham </h3>
       <!-- <div style="display: flex;"> -->
       <div>
-      <p>And I am a Full-Stack Developer</p>
       <!-- <p class="typing">His</p> -->
       </div>
       <a href="https://ssinha8752.github.io/portfolio/">Portfolio</a>
@@ -34,13 +131,444 @@
   </section>
   <div class="menu">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Destination</a></li>
-      <li><a href="#">Travelling Blogs</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Welcome</a></li>
+      <li><a href="#about" class="js-scroll-trigger">AboutMe</a></li>
+      <li><a href="#skills" class="js-scroll-trigger">Skills</a></li>
+      <li><a href="#projects" class="js-scroll-trigger">Projects</a></li>
+      <li><a href="#contact" class="js-scroll-trigger">Contact Me</a></li>
     </ul>
   </div>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 ">
+          <h2>ABOUT ME</h2>
+          <!-- <p class="lead mb-5">We can help you with you idea, Check this out - 
+            <a href="https://unsplash.com/">Unsplash</a>!</p> -->
+          <p>Being a 90's kid I have witnessed the change and advancement in the field of technology and I believe Information Technology is an incredibly exciting subject that will allow us to make a difference to the world and change it in a positive way.</p>
+          <br/>
+          <p>I am a highly motivated and hardworking individual, who has completed his graduation in the field if IT and is working with one of the best banks, in its technology side. Eventual career goal is to become a fully-qualified and get experience with different technologies that shall be productive and helpful for the people around the world.</p>
+          <!-- <a class="btn btn-dar btn-xl js-scroll-trigger" href="#services">Resume</a> -->
+        </div>
+        <div class="col-md-6 col-sm-12 ">
+          <img
+            height="auto"
+            width="400px"
+            src="./img/mee.jpeg"
+            alt="Profile Image"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content-section" id="skills">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="mb-0">Skills</h3>
+        <h2 class="mb-5">TECHNICAL SKILLS</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/html-5.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">HTML 5</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/css.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">CSS</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/javascript.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">JavaScript</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/React.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">React JS</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/redux.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Redux</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/mong.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Mongo DB</div>
+          </a>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/express (2).png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Express JS</div>
+          </a>
+        </div>
+        
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/bug.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Unit Testing</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/cpp.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">C++</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/Java.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Java</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/python.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Python</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/node-512.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Node JS</div>
+          </a>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/npm.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">npm</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/styling.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">UI styling</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/graphql.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Graph QL</div>
+          </a>
+        </div>
+      </div>
+      <div class="content-section-heading text-center">
+        <h2 class="mb-5" style="margin-top: 100px;">PROJECT MANAGEMENT SKILLS</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/confluence.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Confluence</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/jenkins.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Jenkins</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/JIRA.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">JIRA</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/Git.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Git</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/VS.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Virtual Studio</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <a href="#!">
+              <div data-tilt class="thumbnail rounded">
+                <img class="img-fluid" src="./img/tech/Agile.png" />
+              </div>
+              <div style="text-align: center; margin-top: 10px; color: black;">Agile Methodology</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="projects">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="mb-0">Portfolio</h3>
+        <h2 class="mb-5">RECENT PROJECTS</h2>
+      </div>
+      <!-- <div class="row no-gutters">
+        <div class="col-lg-5" style="margin-bottom: 10px;">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Stationary</div>
+                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-5" style="margin-bottom: 10px; margin-left: 10px ;">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Offices</div>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/4.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-5" style="margin-bottom: 10px; margin-left: 100px ;">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Shops</div>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-5" style="margin-bottom: 10px; margin-left: 10px ;">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Workspace</div>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/6.jpg" alt="">
+          </a>
+        </div> -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <div>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi neque, ipsa animi maiores repellendus distinctio
+                  aperiam earum dolor voluptatum consequatur blanditiis
+                  inventore debitis fuga numquam voluptate ex architecto
+                  itaque molestiae.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="#!">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <a class="portfolio-item" href="#!">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./img/project.jpg" />
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+          <div class="col-lg-8 col-sm-12">
+            <a class="portfolio-item" href="#!">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./img/project.jpg" />
+                </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <div>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi neque, ipsa animi maiores repellendus distinctio
+                  aperiam earum dolor voluptatum consequatur blanditiis
+                  inventore debitis fuga numquam voluptate ex architecto
+                  itaque molestiae.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="#!">
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <!-- <section class="content-section text-white" style="background-color: black;">
+    <div class="container text-center">
+      <h2 class="mb-4">Did you like it... ??</h2>
+      <a href="#!" class="btn btn-xl btn-light mr-4">Yeah - it is awesome!</a>
+      <a href="#!" class="btn btn-xl btn-dark">Nahh -  Can do better!</a>
+    </div>
+  </section> -->
+
+  <!-- Map -->
+  <!-- <h2 class="mb-5" style="margin: 20px ;">Right now I am located in ...</h2>
+  <div id="contact" class="map">
+    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+  </div> -->
+
+<!-- <div class="row" style="background-image: url('./img/ctbg.jpg');
+background-size: 100%;
+height: 100%;">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<div class="contact">
+    <h1>Get in touch....</h1>
+    <div class="textbox">
+      <input type="text" placeholder="Name" name="" value="">
+    </div>
+    <div class="message">
+      <input type="text" placeholder="Message" name="" value="">
+  </div>
+  <input type="button" class="btn" value="Submit">
+</div>
+</div> -->
+
+<section id='contact'>
+  <div class="contain" style="margin-top: 50px;">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Get in touch</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- <div class="col-md-6 col-sm-12 " style="margin-top:40px ;">
+  <img
+    width="600px"
+    height="655px"
+    src="./img/ct.jpg"
+    alt="Profile Image"
+  />
+</div> -->
+
+</div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" style="background-color: #343a40;" href="https://www.facebook.com/">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item" style="margin-right: 24px;">
+          <a class="social-link rounded-circle text-white" style="background-color: #343a40;" href="https://www.linkedin.com/in/shubham-sinha-09b1ab127/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" style="background-color: #343a40;" href="https://github.com/ssinha8752">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Made with &hearts; by Shubham</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <!-- <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
   <script>
       const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase');
@@ -50,6 +578,7 @@
         showcase.classList.toggle('active');
       })
   </script>
-  <script src="app.js"></script>
+
 </body>
+
 </html>
