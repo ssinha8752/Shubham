@@ -112,7 +112,10 @@ textarea{
 	}
 	.left{
 		height: 200px;
-	}
+  }
+  .right{
+    width:250px;
+  }
 }
 
 

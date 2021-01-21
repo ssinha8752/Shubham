@@ -502,23 +502,26 @@ height: 100%;">
 </div>
 </div> -->
 
+<form action='./contact.php'>
 <section id='contact'>
   <div class="contain" style="margin-top: 50px;">
 		<div class="contact-box">
 			<div class="left"></div>
 			<div class="right">
-				<h2>Get in touch</h2>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
-				<input type="text" class="field" placeholder="Phone">
-				<textarea placeholder="Message" class="field"></textarea>
+        <h2>Get in touch</h2>
+        <label>Name</label>
+        <input name="name" type="text" class="field" placeholder="Your Name">
+        <label>Email</label>
+        <input name="email" type="text" class="field" placeholder="Your Email">
+        <label>Phone</label>
+				<input name="phone" type="text" class="field" placeholder="Phone">
+				<textarea name="message" placeholder="Message" class="field"></textarea>
 				<button class="btn">Send</button>
 			</div>
 		</div>
 	</div>
-
 </section>
-
+</form>
 <!-- <div class="col-md-6 col-sm-12 " style="margin-top:40px ;">
   <img
     width="600px"
