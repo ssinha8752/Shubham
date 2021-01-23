@@ -8,7 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/png" href="./img/title.png" />
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./mail.js"></script>
   <title>Shubham | Developer</title>
 
   <!-- Bootstrap Core CSS -->
@@ -121,7 +122,7 @@
       <div>
       <!-- <p class="typing">His</p> -->
       </div>
-      <a href="https://ssinha8752.github.io/portfolio/">Portfolio</a>
+      <a class="js-scroll-trigger" href="#about">Portfolio</a>
     </div>
     <ul class="social">
       <li><a href="#"><img src="facebook.png"></a></li>
@@ -417,6 +418,15 @@
                 </p>
               </div>
               <div>
+              <div>
+                <a>
+                  <i class="fab fa-github" style="font-size: 2rem;"></i>
+                  <i class="fab fa-react" style="font-size: 2rem;"></i>
+                  <i class="fab fa-js" style="font-size: 2rem;"></i>
+                  <i class="fab fa-html5" style="font-size: 2rem;"></i>
+                  <i class="fab fa-css3-alt" style="font-size: 2rem;"></i>
+                </a>
+              </div>
               <a target="_blank" class="cta-btn cta-btn--hero" href="https://romantic-tereshkova-3883dc.netlify.app/">
                 See Live
               </a>
@@ -502,17 +512,17 @@ height: 100%;">
 </div>
 </div> -->
 
-<form action='./contact.php'>
+<form action="MAILTO:shubhamsinha8752@gmail.com">
 <section id='contact'>
   <div class="contain" style="margin-top: 50px;">
 		<div class="contact-box">
 			<div class="left"></div>
 			<div class="right">
         <h2>Get in touch</h2>
-        <input name="name" type="text" class="field" placeholder="Your Name">
-        <input name="email" type="text" class="field" placeholder="Your Email">
-				<input name="phone" type="text" class="field" placeholder="Phone">
-				<textarea name="message" placeholder="Message" class="field"></textarea>
+        <input name="name" id="name" type="text" class="field" placeholder="Your Name" required>
+        <input name="email" id="email" type="text" class="field" placeholder="Your Email" required>
+				<input name="phone" id="phone" type="text" class="field" placeholder="Phone">
+				<textarea name="message"  id="message" placeholder="Message" class="field" required></textarea>
 				<button class="btn">Send</button>
 			</div>
 		</div>
@@ -534,11 +544,11 @@ height: 100%;">
   <footer class="footer text-center">
     <div class="container">
       <ul class="list-inline mb-5">
-        <li class="list-inline-item">
+        <!-- <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" style="background-color: #343a40;" href="https://www.facebook.com/">
             <i class="icon-social-facebook"></i>
           </a>
-        </li>
+        </li> -->
         <li class="list-inline-item" style="margin-right: 24px;">
           <a class="social-link rounded-circle text-white" style="background-color: #343a40;" href="https://www.linkedin.com/in/shubham-sinha-09b1ab127/">
             <i class="icon-social-linkedin"></i>

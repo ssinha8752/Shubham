@@ -1,8 +1,8 @@
 <?php
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$phone = $_REQUEST['phone'];
-$message = $_REQUEST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
 
 if(empty($name)|| empty($email) || empty($message))
