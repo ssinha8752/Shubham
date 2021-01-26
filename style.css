@@ -373,8 +373,8 @@ header .logo
 
 .heart-btn{
   position: absolute;
-  top: 119%;
-  left: 60%;
+  top: 105%;
+  left: 50%;
   transform: translate(-50%,-50%);
 }
 .content{
