@@ -524,7 +524,14 @@ height: 100%;">
         <input name="email" id="email" type="text" class="field" placeholder="Your Email" required>
 				<input name="phone" id="phone" type="text" class="field" placeholder="Phone">
 				<textarea name="message"  id="message" placeholder="Message" class="field" required></textarea>
-				<button class="btn">Send</button>
+        <button class="btn">Send</button>
+        <div class="heart-btn">
+          <div class="content">
+            <span class="heart"></span>
+            <span class="text">Like</span>
+            <span class="numb"></span>
+          </div>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -588,6 +595,16 @@ height: 100%;">
         menuToggle.classList.toggle('active');
         showcase.classList.toggle('active');
       })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.content').click(function(){
+        $('.content').toggleClass("heart-active")
+        $('.text').toggleClass("heart-active")
+        $('.numb').toggleClass("heart-active")
+        $('.heart').toggleClass("heart-active")
+      });
+    });
   </script>
 
 </body>
