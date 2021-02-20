@@ -618,7 +618,8 @@ height: 100%;">
         <div class="heart-btn">
           <div class="content">
             <span class="heart"></span>
-            <span class="text">Liked it </span>
+            <span class="text" id="btn" style="margin-left: 45px;">Liked it</span>
+            <span class="text" id="likes">13</span>
             <span class="numb"></span>
           </div>
         </div>
@@ -710,6 +711,37 @@ height: 100%;">
   })();
   </script> -->
   <!--End of Tawk.to Script -->
+
+  <script>
+    const countEl = document.getElementById('btn');
+    const likes = document.getElementById('likes');
+
+    updateVisitCount();
+
+  function updateVisitCount() {
+	  fetch('https://portfolio-live-f4715-default-rtdb.firebaseio.com/value')
+	  .then(res => res.json())
+	  .then(res => {
+		  likes.innerHTML = res.value;
+	  })
+
+    function AddCount() {
+      if(parseInt(likes.innerHTML)%2===1)
+      {
+      localStorage.setItem("count",parseInt(likes.innerHTML) + 1);
+      document.getElementById("likes").innerHTML=localStorage.getItem("count")
+      }
+      else{
+      localStorage.setItem("count",parseInt(likes.innerHTML) - 1);
+      document.getElementById("likes").innerHTML=localStorage.getItem("count")
+      }
+    }
+    
+
+    countEl.addEventListener('click',()=>AddCount())
+}
+
+  </script>
 
   <script type="application/javascript">
     // Your web app's Firebase configuration
