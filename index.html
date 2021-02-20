@@ -741,6 +741,10 @@ height: 100%;">
         firebase.databse().ref().child("page-views/"+ip_to_string).set({
           liker_ip:liker_ip
         })
+        firebase.databse().ref().child("page-views").on("value", function(snapshot){
+          likes=snapshot.numChildren();
+          document.getElementById('view-count').innerHTML=likes;
+        })
     }
   </script>
 
