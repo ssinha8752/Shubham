@@ -723,6 +723,11 @@ height: 100%;">
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    function get_likers_ip(json){
+      liker_ip=json.ip;
+      count_likes(liker_ip);
+    }
   </script>
 
   <script type="application/javascript" src="http://api.ipify.org?format=jsonp&callback=get_likers_ip"></script>
