@@ -728,6 +728,20 @@ height: 100%;">
       liker_ip=json.ip;
       count_likes(liker_ip);
     }
+
+    function count_likes(liker_ip)
+    {
+        var likes;
+        var ip_to_string= liker_ip.toString();
+
+        for(var i, i=0;i<ip_to_string.length; i++)
+        {
+          ip_to_string=ip_to_string.replace(".","-")
+        }
+        firebase.databse().ref().child("page-views/"+ip_to_string).set({
+          liker_ip:liker_ip
+        })
+    }
   </script>
 
   <script type="application/javascript" src="http://api.ipify.org?format=jsonp&callback=get_likers_ip"></script>
