@@ -456,3 +456,7 @@ header .logo
      from { width: 0 }
      to   { width: 100% }
 }
+
+.hr{
+  padding: 30px;
+}
