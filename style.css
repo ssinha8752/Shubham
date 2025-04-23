@@ -476,3 +476,57 @@ header .logo
 .space-hrc{
   margin-top: 40px;
 }
+
+button {
+  width: 120px;
+  height: 25px;
+  font-size: 16px;
+  background-color: white;  /* Button background */
+  border: 2px solid red;  /* Red border */
+  border-radius: 25px;  /* Rounded corners */
+  color: black;  /* Text color */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding-left: 30px;  /* Adds space for the dot */
+}
+
+button a {
+  text-decoration: none;  /* Remove underline */
+  color: black;  /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  /* Make the link fill the button */
+  height: 100%;  /* Make the link fill the button */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;  /* Red dot color */
+  border-radius: 50%;  /* Makes it a circle */
+  position: absolute;
+  left: 10px;  /* Position of the dot to the left of the text */
+  animation: blink 1.5s infinite;  /* Blink animation */
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;  /* Fully visible at the start */
+  }
+  50% {
+      opacity: 0;  /* Invisible halfway through */
+  }
+  100% {
+      opacity: 1;  /* Fully visible again */
+  }
+}
+
+button:hover {
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
